@@ -1,0 +1,2 @@
+class DetailsItem < ApplicationRecord
+end

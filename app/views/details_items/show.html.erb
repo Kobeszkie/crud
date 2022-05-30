@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @details_item %>
+
+<div>
+  <div class="btn btn-outline-primary">
+  <%= link_to "Edit this details item", edit_details_item_path(@details_item) %>
+  </div>
+  <div class="btn btn-outline-primary">
+  <%= link_to "Back to details items", details_items_path %>
+  </div>
+
+  <%= button_to "Destroy this details item", @details_item, method: :delete %>
+</div>

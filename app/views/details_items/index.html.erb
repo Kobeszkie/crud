@@ -1,0 +1,17 @@
+<h1>Details items</h1>
+
+<div id="details_items">
+  <% @details_items.each do |details_item| %>
+    <%= render details_item %>
+    <p>
+      <div class="btn btn-outline-primary">
+      <%= link_to "Show this details item", details_item %>
+      </div>
+    </p>
+  <% end %>
+</div>
+<br/>
+
+<div class="btn btn-outline-primary">
+<%= link_to "Create New", new_details_item_path %>
+</div>
